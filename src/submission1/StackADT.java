@@ -16,8 +16,6 @@ public interface StackADT<E> {
 	
 	/**
 	 * 
-	 * 
-	 * 
 	 * Remove the top item of the stack
 	 * pre-condition: the stack is not empty
 	 * post-condition: the size will be reduced by 1

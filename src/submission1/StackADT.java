@@ -54,4 +54,31 @@ public interface StackADT<E> {
 	 */
 	void clear();
 	
+	/**
+	 * Return an array contains all items of the stack in order
+	 * pre-condition: None
+	 * post-condition: create an array containing all items of the stack
+	 * @return an array containing all items of the stack
+	 */
+	E[] toArray();
+	
+	/**
+	 * Check if the stack contains a specific item
+	 * pre-condition: None
+	 * post-condition: None
+	 * @param item the item to be checked
+	 * @return return true if the item is found in the stack, return false if not 
+	 */
+	boolean contains(E item);
+	
+	/**
+	 * Return the position of the item of the stack
+	 * pre-condition: the stack is not empty
+	 * post-condition: None
+	 * @param item the item to be searched
+	 * @return the position of the item, return -1 if item not found
+	 */
+	int search(E item);
+
+	
 }
